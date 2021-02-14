@@ -29,6 +29,10 @@ Finished. Please have look at the map  2020_movies_map.html
 ```
 ![Alt text](images/image.png)
 
+## HTML file structure
+Map is generated automatically by Python module Folium.
+Map consists of 3 layers: marker of given location by user, 10 nearest locations to given and all the rest markers representing other places of particular year.
+
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
