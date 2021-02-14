@@ -25,7 +25,9 @@ def main():
     locations = database.get_coordinates(films_by_year)
     print('Please wait... 50% complete\n')
     locations = database.find_distance(locations, (user_location))
+    print('Please wait... 70% complete\n')
     map_builder.build_map(locations, user_location, year)
+    print('Please wait... 90% complete\n')
     map_name = str(year) + '_movies_map.html'
     print("Finished. Please have look at the map ", map_name)
 
