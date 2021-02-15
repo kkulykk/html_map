@@ -14,7 +14,8 @@ def main():
     print('\n***** Please, keep in mind that the original database is too big, so it would\
  take 14 days analyze it completely. ***** \n')
     lines_to_read = int(
-        input("Choose how many lines of data would you like to proceed in range from 10 to 1241772: \n"))
+        input("Choose how many lines of data would you like to proceed in range\
+ from 10 to 1241772: \n"))
     user_location = (float(user_location.split(
         ',')[0]), float(user_location.split(',')[1]))
     print('Your map is generating...\n')

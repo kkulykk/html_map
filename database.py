@@ -2,7 +2,6 @@
 Module to work with database file.
 """
 
-# import doctest
 import math
 from geopy.extra.rate_limiter import RateLimiter
 from geopy.exc import GeocoderUnavailable
@@ -18,7 +17,7 @@ def read_file(file_name: str, lines_to_read: int) -> list:
     [['"#1 Single" (2006)', 'Los Angeles, California, USA']]
     """
     result = []
-    with open("locations.list", 'r', errors='ignore') as file:
+    with open(file_name, 'r', errors='ignore') as file:
         for k, line in enumerate(file):
             info = line.strip().split('\t')
             movie = [j for j in info if j != '']
@@ -77,9 +76,7 @@ def find_distance(locations: list, user_location: tuple) -> list:
         lon2 = user_location[1]
         lon1, lat1, lon2, lat2 = map(math.radians, [lon1, lat1, lon2, lat2])
         distance = 2 * 6371 * math.asin(math.sqrt(math.sin((lat2 - lat1)/2) ** 2 +
-                                                  math.cos(lat1) * math.cos(lat2) * math.sin((lon2 - lon1)/2) ** 2))
+                                                  math.cos(lat1) * math.cos(lat2) *
+                                                  math.sin((lon2 - lon1)/2) ** 2))
         i.append(distance)
     return sorted(locations, key=lambda x: x[-1])
-
-
-# doctest.testmod()
