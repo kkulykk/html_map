@@ -3,10 +3,6 @@
 HTML MAP is a Python module that allows to build a map with markers of places where different films were captured during an exact year and shows 10 nearest locations to that one provided by the user.
 The map is useful for visualizing the world and observing in which cities different films were made.
 
-## Installation
-
-Unfortunately, there is not an easy way to install this module. You should create a distributive and then install it.
-
 ## Usage
 
 Run main.py to start the application.
