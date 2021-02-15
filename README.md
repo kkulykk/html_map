@@ -5,7 +5,7 @@ The map is useful for visualizing the world and observing in which cities differ
 
 ## Installation
 
-Unfortunately, there is not an easy way to install this module. You should create a repository and then install it.
+Unfortunately, there is not an easy way to install this module. You should create a distributive and then install it.
 
 ## Usage
 
